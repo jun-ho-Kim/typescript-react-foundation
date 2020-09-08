@@ -29,12 +29,11 @@ class App extends Component<{}, IState> {
     const {counter, name} = this.state;
     return (
     <div>
-      <Number count={counter}>
-        <button onClick={this.add}>click</button>
-      </Number>
-        <Form onFormSubmit={this.onFormSubmit}>
-          <Input value={name} onChange={this.onChange} />
-        </Form>
+      <Number count={counter}/>
+      <button onClick={this.add}>click</button>
+      <Form onFormSubmit={this.onFormSubmit}>
+        <Input value={name} onChange={this.onChange} />
+      </Form>
     </div>
     )
   }
